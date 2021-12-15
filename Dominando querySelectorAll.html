@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dominando querySelectorAll.</title>
+</head>
+<body>
+	<!-- <style>
+		.testes .inside-testes {
+			color: aquamarine;
+		}
+	</style> -->
+	<div>
+		<div class="testes"></div>
+			<div class="inside-testes">Texto</div>
+		<div class="testes"></div>
+			<div class="inside-testes">Texto2</div>
+		<script>
+			var els = document.querySelectorAll('.testes');
+				// els[0].style.color = 'red';
+				// els[0].style.color = 'blue';
+				els[0].innerHTML = '<div class="inside-testes-via-js">Oi2</div>';
+
+		</script>
+	</div>
+</body>
+</html>
