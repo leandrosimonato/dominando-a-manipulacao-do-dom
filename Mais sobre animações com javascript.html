@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Mais sobre animações com javascript.</title>
+	</head>
+
+	<body>
+		<style>
+			.conteudo h2 span {
+				font-size: 13px;
+				cursor: pointer;
+			}
+			.conteudo p {
+				height: 10px;
+				overflow: hidden;
+				transition: 1s;
+			}
+			.mostrar {
+				height: 200px !important;
+			}
+		</style>
+		<div class="conteudo">
+			<h2>Título do Conteúdo! <span>Ver mais!</span> </h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Ex impedit iste ipsum vitae est modi odio dicta quis quo
+				deleniti at non neque quam magni facilis, quas fugiat
+				temporibus doloremque. Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Veritatis, sunt laudantium? Maxime tempore dicta,
+				porro nihil aliquam eligendi beatae dignissimos quae expedita assumenda
+				est. Minima, ex? Eos pariatur architecto expedita.
+			</p>
+		</div>
+		<div class="conteudo">
+			<h2>Título do Conteúdo! <span>Ver mais!</span> </h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Ex impedit iste ipsum vitae est modi odio dicta quis quo
+				deleniti at non neque quam magni facilis, quas fugiat
+				temporibus doloremque. Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Veritatis, sunt laudantium? Maxime tempore dicta,
+				porro nihil aliquam eligendi beatae dignissimos quae expedita assumenda
+				est. Minima, ex? Eos pariatur architecto expedita.
+			</p>
+		</div>
+		<div class="conteudo">
+			<h2>Título do Conteúdo! <span>Ver mais!</span> </h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Ex impedit iste ipsum vitae est modi odio dicta quis quo
+				deleniti at non neque quam magni facilis, quas fugiat
+				temporibus doloremque. Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Veritatis, sunt laudantium? Maxime tempore dicta,
+				porro nihil aliquam eligendi beatae dignissimos quae expedita assumenda
+				est. Minima, ex? Eos pariatur architecto expedita.
+			</p>
+		</div>
+		<div class="conteudo">
+			<h2>Título do Conteúdo! <span>Ver mais!</span> </h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Ex impedit iste ipsum vitae est modi odio dicta quis quo
+				deleniti at non neque quam magni facilis, quas fugiat
+				temporibus doloremque. Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Veritatis, sunt laudantium? Maxime tempore dicta,
+				porro nihil aliquam eligendi beatae dignissimos quae expedita assumenda
+				est. Minima, ex? Eos pariatur architecto expedita.
+			</p>
+		</div>
+		<div class="conteudo">
+			<h2>Título do Conteúdo! <span>Ver mais!</span> </h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Ex impedit iste ipsum vitae est modi odio dicta quis quo
+				deleniti at non neque quam magni facilis, quas fugiat
+				temporibus doloremque. Lorem ipsum dolor sit, amet consectetur
+				adipisicing elit. Veritatis, sunt laudantium? Maxime tempore dicta,
+				porro nihil aliquam eligendi beatae dignissimos quae expedita assumenda
+				est. Minima, ex? Eos pariatur architecto expedita.
+			</p>
+		</div>
+		<script>
+			var span = document.querySelector('.conteudo span')
+				span.addEventListener('click', function() {
+				// alert('Clicado!');
+				var conteudo = document.querySelector('.conteudo p');
+				if(conteudo.classList.contains('mostrar')) {
+					span.innerHTML = 'Ver mais!';
+					conteudo.classList.remove('mostrar');
+					// alert('Esconda o conteúdo!');
+				} else {
+					span.innerHTML = 'Ocultar!';
+					conteudo.classList.add('mostrar');
+					// alert('Monstra o conteúdo!');
+				}
+			});
+		</script>
+	</body>
+
+</html>
